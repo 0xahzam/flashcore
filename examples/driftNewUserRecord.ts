@@ -1,5 +1,5 @@
 import { Connection } from "@solana/web3.js";
-import { event, Parser } from "../event";
+import { event, Parser } from "../src/event";
 
 const driftNewUserRecord = event(
   "NewUserRecord",

@@ -38,7 +38,7 @@ console.log(data);
 
 ## More
 
-Check `examples/` in [github.com/0xahzam/rift](https://github.com/yourusername/rift/tree/main/examples). Tweak as you need.
+Check `examples/` in [github.com/0xahzam/flashcore](https://github.com/0xahzam/flashcore/tree/main/examples). Tweak as you need.
 
 ## Status
 

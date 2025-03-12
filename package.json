@@ -1,11 +1,12 @@
 {
   "name": "flashcore",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "solana event parser for extracting data from logs",
   "main": "dist/index.js",
-  "module": "index.ts",
-  "type": "module",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "bun build ./src/index.ts --outdir dist --target node && bunx tsc",
     "prepublishOnly": "bun run build"
@@ -18,14 +19,11 @@
   ],
   "author": "ahzam",
   "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.98.0"
+  },
   "devDependencies": {
     "bun-types": "latest",
     "typescript": "^5.8.2"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "@solana/web3.js": "^1.98.0"
   }
 }

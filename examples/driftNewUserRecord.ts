@@ -1,5 +1,5 @@
 import { Connection } from "@solana/web3.js";
-import { event, Parser } from "../src/event";
+import { event, Parser } from "flashcore";
 
 const driftNewUserRecord = event(
   "NewUserRecord",
@@ -13,7 +13,7 @@ const driftNewUserRecord = event(
       name: r.bytes(32),
       referrer: r.pubkey(),
     };
-  },
+  }
 );
 
 const driftDepositRecord = event(
@@ -38,12 +38,12 @@ const driftDepositRecord = event(
       explanation: r.u8(),
       transferUser: r.optionPubkey(),
     };
-  },
+  }
 );
 
 async function main() {
   const connection = new Connection(
-    process.env.RPC_URL || "https://api.mainnet-beta.solana.com",
+    process.env.RPC_URL || "https://api.mainnet-beta.solana.com"
   );
   const parser = new Parser(connection)
     .on(driftNewUserRecord)

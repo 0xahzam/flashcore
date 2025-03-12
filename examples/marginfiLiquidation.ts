@@ -1,5 +1,5 @@
 import { Connection } from "@solana/web3.js";
-import { event, Parser } from "../src/event";
+import { event, Parser } from "flashcore";
 
 const marginfiLiquidationEvent = event(
   "LendingAccountLiquidateEvent",
@@ -29,12 +29,12 @@ const marginfiLiquidationEvent = event(
       preBalances: readBalances(),
       postBalances: readBalances(),
     };
-  },
+  }
 );
 
 async function main() {
   const connection = new Connection(
-    process.env.RPC_URL || "https://api.mainnet-beta.solana.com",
+    process.env.RPC_URL || "https://api.mainnet-beta.solana.com"
   );
   const parser = new Parser(connection).on(marginfiLiquidationEvent);
   const signature =

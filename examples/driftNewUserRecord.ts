@@ -62,3 +62,85 @@ async function main() {
 }
 
 main();
+
+/*
+Output:
+Parsing Drift NewUserRecord: 4JUYkpqnH4GpuqwLGiHN6NhCu97MavpLSGY2sYTjap5zUxJAvt867pVHNJ5uiqstR7nuhGgKe6Cr73cguBRc2Wqy
+{
+  NewUserRecord: [
+    {
+      ts: 1741719599n,
+      userAuthority: PublicKey(9kSf2BB2dESLF1J3WXmpj8KiVL7ncabhvC1nYw2nd8UF) {
+        _bn: <BN: 81fe7a9f39072752903fd407e8286770d85df29e85d014d7c0ee7d6b3b680938>,
+        equals: [Function: equals],
+        toBase58: [Function: toBase58],
+        toJSON: [Function: toJSON],
+        toBytes: [Function: toBytes],
+        toBuffer: [Function: toBuffer],
+        toString: [Function: toString],
+        encode: [Function: encode]
+      },
+      user: PublicKey(3EmcS9WueGbiQZ6D8ofM2bJa6skTTq3QnD2VrDTJvJHJ) {
+        _bn: <BN: 213e5db8e8e594476a4124f2e03617ff2dad1454f3f0d806dcf5fd550ad6892d>,
+        equals: [Function: equals],
+        toBase58: [Function: toBase58],
+        toJSON: [Function: toJSON],
+        toBytes: [Function: toBytes],
+        toBuffer: [Function: toBuffer],
+        toString: [Function: toString],
+        encode: [Function: encode]
+      },
+      subAccountId: 0,
+      name: Buffer(32) [ 77, 97, 105, 110, 32, 65, 99, 99, 111, 117, 110, 116, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32 ],
+      referrer: PublicKey(11111111111111111111111111111111) {
+        _bn: <BN: 0>,
+        equals: [Function: equals],
+        toBase58: [Function: toBase58],
+        toJSON: [Function: toJSON],
+        toBytes: [Function: toBytes],
+        toBuffer: [Function: toBuffer],
+        toString: [Function: toString],
+        encode: [Function: encode]
+      }
+    }
+  ],
+  DepositRecord: [
+    {
+      ts: 1741719599n,
+      userAuthority: PublicKey(9kSf2BB2dESLF1J3WXmpj8KiVL7ncabhvC1nYw2nd8UF) {
+        _bn: <BN: 81fe7a9f39072752903fd407e8286770d85df29e85d014d7c0ee7d6b3b680938>,
+        equals: [Function: equals],
+        toBase58: [Function: toBase58],
+        toJSON: [Function: toJSON],
+        toBytes: [Function: toBytes],
+        toBuffer: [Function: toBuffer],
+        toString: [Function: toString],
+        encode: [Function: encode]
+      },
+      user: PublicKey(3EmcS9WueGbiQZ6D8ofM2bJa6skTTq3QnD2VrDTJvJHJ) {
+        _bn: <BN: 213e5db8e8e594476a4124f2e03617ff2dad1454f3f0d806dcf5fd550ad6892d>,
+        equals: [Function: equals],
+        toBase58: [Function: toBase58],
+        toJSON: [Function: toJSON],
+        toBytes: [Function: toBytes],
+        toBuffer: [Function: toBuffer],
+        toString: [Function: toString],
+        encode: [Function: encode]
+      },
+      direction: 0,
+      depositRecordId: 11531175n,
+      amount: 138752387n,
+      marketIndex: 0,
+      oraclePrice: 1000000n,
+      marketDepositBalance: 210946777092131493n,
+      marketWithdrawBalance: 87360813184226559n,
+      marketCumulativeDepositInterest: 11423744991n,
+      marketCumulativeBorrowInterest: 12904864130n,
+      totalDepositsAfter: 138752387n,
+      totalWithdrawsAfter: 0n,
+      explanation: 0,
+      transferUser: null
+    }
+  ]
+}
+*/

@@ -1,6 +1,6 @@
 {
   "name": "flashcore",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "solana event parser for extracting data from logs",
   "repository": "https://github.com/0xahzam/flashcore",
   "main": "dist/index.js",

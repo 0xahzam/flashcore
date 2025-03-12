@@ -63,6 +63,17 @@ export class BufferReader {
     this.offset += 8;
     return value;
   }
+  i128(): bigint {
+    const low = this.i64();
+    const high = this.i64();
+
+    // If high part is negative, we need to handle two's complement for 128-bit
+    if (high < 0n) {
+      return (high << BigInt(64)) | (low & BigInt("0xFFFFFFFFFFFFFFFF"));
+    } else {
+      return (high << BigInt(64)) | low;
+    }
+  }
 
   // Floating-point reads
   f32(): number {

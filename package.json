@@ -2,6 +2,7 @@
   "name": "flashcore",
   "version": "0.1.1",
   "description": "solana event parser for extracting data from logs",
+  "repository": "https://github.com/0xahzam/flashcore",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
